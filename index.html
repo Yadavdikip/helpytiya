@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaazaTime Copy</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; }
+    header { background:#d2001a; color:#fff; padding:0.5rem; position:sticky; top:0; z-index:100; }
+    header nav { display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+    header nav a { color:#fff; text-decoration:none; font-weight:600; }
+    .categories { background:#f5f5f5; padding:0.5rem; overflow-x:auto; white-space:nowrap; }
+    .categories a { display:inline-block; margin-right:1rem; color:#333; text-decoration:none; font-weight:500; }
+    .breaking { background:#fff3cd; color:#856404; padding:0.5rem; border-bottom:1px solid #ccc; }
+    .container { max-width:1200px; margin:auto; padding:1rem; display:grid; grid-template-columns:3fr 1fr; gap:1rem; }
+    .main-news { display:grid; grid-template-columns:2fr 1fr; gap:0.5rem; }
+    .main-news img { width:100%; height:auto; }
+    .sidebar article { margin-bottom:1rem; background:#fff; padding:0.5rem; border:1px solid #ddd; border-radius:4px; }
+    section { margin-top:2rem; }
+    section h2 { border-left:4px solid #d2001a; padding-left:0.5rem; color:#d2001a; }
+    .posts { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1rem; }
+    .post img { width:100%; height:150px; object-fit:cover; }
+    .post-title { font-size:1rem; margin:0.5rem 0; font-weight:600; }
+    footer { background:#333; color:#eee; text-align:center; padding:1rem; margin-top:2rem; }
+    @media(max-width:800px){ .container { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">TaazaTime</a>
+      <a href="#">हिन्दी</a><a href="#">English</a><a href="#">मराठी</a>
+      <a href="#">Home</a><a href="#">ऑटोमोबाइल</a><a href="#">बिज़नेस</a>
+      <a href="#">टेक्नोलॉजी</a><a href="#">एजुकेशन</a><a href="#">मनोरंजन</a>
+      <a href="#">Apply For Job</a>
+    </nav>
+  </header>
+
+  <div class="categories">
+    <a href="#">Auto</a><a href="#">Business</a>
+    <a href="#">Technology</a><a href="#">Finance</a>
+    <a href="#">Entertainment</a><a href="#">Education</a>
+    <a href="#">Sports</a><a href="#">Jyotish</a>
+  </div>
+
+  <div class="breaking">
+    <strong>Breaking:</strong> APSC UTO Notification Out – यहाँ से देखें पूरी जानकारी
+  </div>
+
+  <div class="container">
+    <div class="main">
+      <div class="main-news">
+        <article>
+          <img src="https://via.placeholder.com/600x400" alt="Lead">
+          <h1>लीड स्टोरी: Ducati DesertX Launch in India</h1>
+        </article>
+        <aside class="sidebar">
+          <article><h3>Sports: Ind vs Aus Updates</h3></article>
+          <article><h3>Tech: Latest Vivo Launch</h3></article>
+          <article><h3>Business: Guru Randhawa Net Worth</h3></article>
+        </aside>
+      </div>
+
+      <section>
+        <h2>Auto ➤</h2>
+        <div class="posts">
+          <div class="post"><img src="https://via.placeholder.com/300x150"><div class="post-title">Ducati Multistrada V4 नई रेंज</div></div>
+          <div class="post"><img src="https://via.placeholder.com/300x150"><div class="post-title">BMW F850 GS जानकारी</div></div>
+          <div class="post"><img src="https://via.placeholder.com/300x150"><div class="post-title">Fisker Ocean EV रिव्यू</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Tech ➤</h2>
+        <div class="posts">
+          <div class="post"><img src="https://via.placeholder.com/300x150"><div class="post-title">vivo Y500 स्मार्टफोन</div></div>
+          <div class="post"><img src="https://via.placeholder.com/300x150"><div class="post-title">iPhone 16e की जानकारी</div></div>
+          <div class="post"><img src="https://via.placeholder.com/300x150"><div class="post-title">Ulefone Armor13 प्रोसेसर</div></div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <article><h4>Newsletter</h4><p>Email से ताज़ा अपडेट्स पाएं</p></article>
+      <article><h4>Most Read</h4><p>Harnaaz Sandhu Net Worth</p><p>Delhi Crorepati कहानी</p></article>
+    </aside>
+  </div>
+
+  <footer>
+    © 2025 TaazaTime Clone | Layout Demo
+  </footer>
+</body>
+</html>
